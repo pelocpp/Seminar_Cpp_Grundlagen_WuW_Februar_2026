@@ -21,9 +21,9 @@ public:
     void setSeconds(int);
 
     // getter // lesende Zugriff
-    int getHours();
-    int getMinutes();
-    int getSeconds();
+    int getHours() const;
+    int getMinutes() const;
+    int getSeconds() const;
 
 public:
     void print();
@@ -31,5 +31,5 @@ public:
     // void addSecond();
 
     // Time difference(Time other);    // KOPIE
-    Time difference(Time& other);   // Referenz
+    Time difference(const Time& other) const;   // Referenz
 };

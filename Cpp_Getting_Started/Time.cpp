@@ -62,17 +62,17 @@ void Time::setSeconds(int s)
     }
 }
 
-int Time::getHours()  
+int Time::getHours() const
 {
     return m_hours;
 }
 
-int Time::getMinutes()
+int Time::getMinutes() const
 {
     return m_minutes;
 }
 
-int Time::getSeconds()
+int Time::getSeconds() const
 {
     return m_seconds;
 
@@ -107,11 +107,21 @@ Time::Time()
 //}
 
 
-Time Time::difference(Time& other)
+Time Time::difference(const Time& other) const
 {
+    // Schutz von Objekten: other // const
+     //m_hours = 10;
+    // other.m_hours = 10;
+
+
     // wie kann man das machen
     // Trick: beide Uhrzeiten auf Sekunden umrechen
-    int thisSeconds = m_hours * 3600 + m_minutes * 60 + m_seconds;
+    
+    
+    //int thisSeconds = m_hours * 3600 + m_minutes * 60 + m_seconds;
+
+    int thisSeconds = getHours() * 3600 + m_minutes * 60 + m_seconds;
+
 
     int otherSeconds = other.m_hours * 3600 + other.m_minutes * 60 + other.m_seconds;
 

@@ -11,6 +11,7 @@ Dienstag: Start:  8.45 == Ende: 16.45.
 =============================================================
 
 peter.loos@gmx.de
+-----------------
 
 https://github.com/pelocpp
 
@@ -192,5 +193,168 @@ Wie könne wir die Kopie vermeiden ????????
 ==> Ginge: Adressen / Pointern  // C - Stilistik
 
 ==> Geht (Besser): Referenz     // C++ - Stilistik
+
+
+=============================================================
+
+Bin ich 
+
+== innerhalb der Klasse
+== außerhalb der Klasse
+
+=======================================================
+
+const:
+
+A) const zum Schutz der Objekte
+
+B) const für bessere Laufzeit: Performanz
+
+=======================================================
+=======================================================
+
+OO: Objekt-Orientierte Programmierung
+-------------------------------------
+
+== Schutz der Daten (private)
+
+== Vererbung
+
+================================================================
+
+Vererbung:
+
+Whyyyyyyyyyyyyyyyyyyyyy
+
+Um Code zu sparen ......
+
+Krankenversicherung
+Lebensversicherung
+
+=================================================
+
+Konzept:
+
+i) Vererbung ist ein sprachliches Konzept
+
+ABER: 
+
+WANN setzt man Vererbung ein ??????????????????????
+
+== Klasse Rechteck  // Rectangle
+
+== Klasse FarbigesRechteck // ColoredRectangle
+
+Design:  Frage:
+
+== Ein farbiges Rechteck ist schöner als ein Rechteck.
+== Ein Rechteck und ein farbiges Rechteck sind in der Disko.
+
+== Ein farbiges Rechteck ist ein Rechteck.
+
+   Beziehungen // Relationsships
+
+   is-a  // ist-ein Beziehung
+
+   Ein farbiges Rechteck steht in der ist-ein Beziehung zu einem Rechteck.
+
+== Klasse Linie  // Line
+== Klasse Punkt // Point
+
+Eine Linie besteht aus unendlich vielen Punkten.
+
+Ein Linie ist ein Punkt:  Neeeeeeeeeee
+
+Ein Punkt ist eine Linie: Neeeeeeeeee
+
+Eine Linie hat zwei // besteht aus zwei Punkten.
+
+   has-a  // hat-ein  
+
+Antwort:
+
+class Line {
+
+    Point m_begin;
+    Point m_end;
+    ...
+};
+
+ist-ein Beziehung   =========> Vererbung
+
+
+
+
+Vererbung  ===> Wiederverwendung
+
+Nomenklatur:
+
+Basisklasse // base class
+Parent Class // Vaterklasse
+
+
+Abgeleitete Klasse // Derived Class
+Kind Klasse // child class
+
+Die abgeleitete Klasse ist eine Spezialisierung
+der Vaterklasse
+
+Die Vaterklasse ist eine Verallgemeinerung (Generalisierung)
+der Kindklasse.
+
+=================================================================
+
+Wenn es NICHT um Produkt-Code geht:
+
+Kann man Klassen und Methoden auch kürzer schreiben:
+
+In einer Datei kann man eine Klasse auch definieren + implementieren.
+
+
+    Versicherung
+       Adressdaten
+       Zeitpunkt: Abschluss
+
+    Lebenversicherung
+    Krankenversicherung
+
+    ========================================
+
+ Was tut virtual
+
+ Es gibt 2 Arten eines Methodenaufrufs:
+
+ DIREKT:  Der TYP der Variablen zur Übersetzungszeit entscheidet
+
+ 
+ INDIREKT: Der TYP des Objekts zur LAUFZEIT entscheidet.
+
+   Für INDIREKT muss ich virtual hinschreiben.
+
+a) Man könnte IMMER virtual hinschreiben.
+
+   (( Java  // final ))
+
+b) VIRTUAL IST langsamer.
+
+c) WILL ICH - bei der einen oder andere Methode - 
+   das so haben.
+
+   Beispiel:
+
+   Rectangle()  ==> EraseBackground
+
+   Will ich das durchreichbar machen: NEIN.
+
+   ==> Draw
+   ==> BerechneKostenProJahr
+
+
+
+
+
+
+
+
 
 

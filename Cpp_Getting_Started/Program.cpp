@@ -2,11 +2,11 @@
 
 #include <iostream>
 
-extern void references();
+extern void rectangles();
 
 int main()
 {
-    references();
+    rectangles();
 }
 
 int main_difference()
@@ -21,6 +21,8 @@ int main_difference()
     // 0 Stunden, 52 Minuten, 0 Sekunden
 
     // Time abstand = difference(now, mittag);  // C-Stil // prozeduraler Stil
+
+    // mittag.m_hours = 10;  // auﬂerhalb
 
     Time abstand = now.difference(mittag);  // OO Stil
 
