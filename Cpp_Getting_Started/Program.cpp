@@ -3,10 +3,11 @@
 #include <iostream>
 
 extern void rectangles();
+extern void stl();
 
 int main()
 {
-    rectangles();
+    stl();
 }
 
 int main_difference()

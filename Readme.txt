@@ -349,12 +349,89 @@ c) WILL ICH - bei der einen oder andere Methode -
    ==> Draw
    ==> BerechneKostenProJahr
 
+==================================================================
+
+Bibliothek:  STL
+
+"Etwas eigenen Charme" // Extrem hohe Performanz
+------------------------------------------------
+
+C#, Java  ==> Straight Forward ...
+
+Alexander Stepanow: Generische Programmierung
+
+Bjarne Stroustrup:  C++ ==> Bibliothek
+
+APL: Vector ===> std::vector
+
+STL: Standard Template Library  // Schablone 
+
+Konzepte:
+
+== STL Container
+== STL Iteratoren
+== STL Algorithmen
+
+== STL Container
+  
+   std::vector  
+
+   Hash Tabellen Technik  // std::unorderer_map
+
+==========================
+
+Transparenz // leichte Austauschbarkeit ihrer
+Container ermöglichen.
+
+Wie, wenn es nicht mit dem [] Operator geht ???
+
+STL Iteratoren:
+
+Was beschreibt ein STL Iterator ????
+
+   Eine Position in einem STL Container.
+
+   Nicht mit dem WERT an der Position zu verwechseln:
+
+   Wert:                  operator*
+   Nächte Position:       operator ++
+   Position vergleichen:  operator ==
+
+Wie kommt man zu einer Position:
+
+Container:  ==>  begin()
+                 end()    // exakt: Die Position NACH dem letzen Element
+
+Es gibt VIELE Container.
+
+Jeder Container definiert seinen EIGENEN
+Datentyp für Positionen.
+
+==> Deshalb ist dieser Typ
+    IN der Container Klasse definiert.
+
+===============================================
+
+C++: Klassischen Definition  // ca: 1990
+
+     Modern C++              // ab 2011 
 
 
+Boiler-plate Code:
+
+===============================================
+
+STL Container
+STL Iteratoren
+STL Algorithmen
+
+std::for_each
 
 
+===============================================
 
+C++ Introduction
 
+Modern C++
 
-
-
+===============================================
