@@ -135,6 +135,11 @@
   <ItemGroup>
     <ClInclude Include="Time.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Hierarchie.png" />
+    <Image Include="..\Referenz.png" />
+    <Image Include="..\Stack.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
